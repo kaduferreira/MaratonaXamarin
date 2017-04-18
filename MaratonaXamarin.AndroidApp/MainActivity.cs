@@ -35,7 +35,7 @@ namespace MaratonaXamarin.AndroidApp
                 Android.Resource.Layout.SimpleListItemSingleChoice,
                 users
                     .OrderBy(y => y.Name)
-                    .Select(x => $"{x.Id} {x.Name}")
+                    .Select(x => x.Name)
                     .ToArray()
                 );
             };
